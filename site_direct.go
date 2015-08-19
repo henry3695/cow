@@ -1,4 +1,4 @@
-package main
+package cow
 
 var directDomainList = []string{
 	// 视频

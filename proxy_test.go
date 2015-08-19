@@ -1,10 +1,11 @@
-package main
+package cow
 
 import (
 	"bytes"
-	"github.com/cyfdecyf/bufio"
 	"strings"
 	"testing"
+
+	"github.com/cyfdecyf/bufio"
 )
 
 func TestSendBodyChunked(t *testing.T) {

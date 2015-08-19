@@ -1,11 +1,10 @@
-package main
+package cow
 
 import (
 	"encoding/base64"
 	"encoding/binary"
 	"errors"
 	"fmt"
-	ss "github.com/shadowsocks/shadowsocks-go/shadowsocks"
 	"hash/crc32"
 	"io"
 	"math/rand"
@@ -14,6 +13,8 @@ import (
 	"strconv"
 	"sync"
 	"time"
+
+	ss "github.com/shadowsocks/shadowsocks-go/shadowsocks"
 )
 
 // Interface that all types of parent proxies should support.

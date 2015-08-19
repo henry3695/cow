@@ -1,4 +1,4 @@
-package main
+package cow
 
 import (
 	// "flag"
@@ -28,7 +28,11 @@ func lookPath() (argv0 string, err error) {
 	return
 }
 
-func main() {
+func ConfigParser() configParser {
+	return configParser{}
+}
+
+func Start() {
 	quit = make(chan struct{})
 	// Parse flags after load config to allow override options in config
 	cmdLineConfig := parseCmdLineConfig()

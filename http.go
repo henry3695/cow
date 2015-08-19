@@ -1,14 +1,15 @@
-package main
+package cow
 
 import (
 	"bytes"
 	"errors"
 	"fmt"
-	"github.com/cyfdecyf/bufio"
 	"net"
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/cyfdecyf/bufio"
 )
 
 const CRLF = "\r\n"

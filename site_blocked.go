@@ -1,4 +1,4 @@
-package main
+package cow
 
 var blockedDomainList = []string{
 	"bit.ly",

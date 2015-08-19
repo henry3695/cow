@@ -1,4 +1,4 @@
-package main
+package cow
 
 import (
 	"errors"
@@ -129,7 +129,7 @@ func parseCmdLineConfig() *Config {
 		c.RcFile = expandTilde(c.RcFile)
 	}
 	if err := isFileExists(c.RcFile); err != nil {
-		Fatal("fail to get config file:", err)
+		fmt.Println("fail to get config file:", err)
 	}
 	initConfig(c.RcFile)
 
@@ -597,7 +597,8 @@ func parseConfig(rc string, override *Config) {
 	// fmt.Println("rcFile:", path)
 	f, err := os.Open(expandTilde(rc))
 	if err != nil {
-		Fatal("Error opening config file:", err)
+		fmt.Println("Error opening config file:", err)
+		return
 	}
 
 	IgnoreUTF8BOM(f)

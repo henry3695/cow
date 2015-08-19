@@ -1,17 +1,18 @@
-package main
+package cow
 
 import (
 	"bytes"
 	"encoding/base64"
 	"errors"
 	"fmt"
-	"github.com/cyfdecyf/bufio"
 	"net"
 	"os"
 	"strconv"
 	"strings"
 	"text/template"
 	"time"
+
+	"github.com/cyfdecyf/bufio"
 )
 
 const (

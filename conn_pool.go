@@ -1,6 +1,6 @@
 // Share server connections between different clients.
 
-package main
+package cow
 
 import (
 	"sync"

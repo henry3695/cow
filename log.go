@@ -1,4 +1,4 @@
-package main
+package cow
 
 // This logging trick is learnt from a post by Rob Pike
 // https://groups.google.com/d/msg/golang-nuts/gU7oQGoCkmg/j3nNxuS2O_sJ
@@ -44,7 +44,7 @@ func init() {
 	flag.BoolVar((*bool)(&errl), "err", true, "error log")
 	flag.BoolVar((*bool)(&dbgRq), "request", false, "request log")
 	flag.BoolVar((*bool)(&dbgRep), "reply", false, "reply log")
-	flag.BoolVar(&verbose, "v", false, "more info in request/response logging")
+	flag.BoolVar(&verbose, "verbose", false, "more info in request/response logging")
 	flag.BoolVar(&colorize, "color", false, "colorize log output")
 }
 
